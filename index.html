@@ -6,19 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
-
+  
   <body>
-    <p class="loading">Loading ...</p>
-    <section class="container">
-      <section class="items"></section>
-      <section class="cart">
-        <span class="cart__title">Carrinho de compras</span>
-        <button id ="empty-cart" class="empty-cart">Esvaziar carrinho</button>
-        <ol id = "cart__items" class="cart__items"></ol>
-        <p id ="total-price" class="total-price">a</p>
+    <header>
+      <h1 class='logo'>Trybe Cart</h1>
+      <div class="search-container">
+        <input class="search-input" type="text" placeholder="Buscar produtos, acessórios e muito mais...">
+        <button id ="search-button"><i class="fas fa-search"></i></button>
+      </div>
+      <ul class="left-header">
+        <li>Login</li>
+        <li>Contato</li>
+      </ul>
+    </header>
+    <div class="main-content">
+      <p class="loading">Loading ...</p>
+      <section class="container">
+        <section class="items"></section>
+        <section class="cart">
+          <span class="cart__title">Carrinho de compras</span>
+          <button id="empty-cart" class="empty-cart button">Esvaziar carrinho <i class="far fa-trash-alt"></i></button>
+          <ol id="cart__items" class="cart__items"></ol>
+          <p id="total-price" class="total-price"></p>
+          <button id="finish-cart" class="finish-cart button">Finalizar compra <i class="fas fa-cart-arrow-down"></i></button>
+          <p class = "finish-msg">Obrigado por comprar com a gente! Volte sempre.</p>
+        </section>
       </section>
-    </section>
+    </div>
   </body>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+  <script src="script.js"></script>
 </html>

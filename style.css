@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 .top-bar {
   align-items: center;
   display: flex;
@@ -17,6 +21,20 @@
   display: flex;
 }
 
+.search-container {
+  border-radius: 10px;
+  display: flex;
+  width: 30%;
+}
+
+.search-input {
+  width: 100%;
+}
+
+#search-button:hover {
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   justify-content: space-around;
@@ -31,7 +49,7 @@
 }
 
 .item {
-  border: 2px solid blue;
+  border: 2px solid #232F3E;
   border-radius: 5px;
   box-sizing: border-box;
   display: flex;
@@ -56,21 +74,108 @@
 }
 
 .item .item__add {
-  background-color: green;
+  background-color: #FEBD69;
   border: 0;
+  border-radius: 5px;
   cursor: pointer;
   margin: 0;
   padding: 5px;
+  transition: 500ms;
+}
+
+.item__add:hover {
+  opacity: 0.8;
+}
+
+.empty-cart {
+  background-color: red;
+  margin-bottom: 10px;
 }
 
 .cart {
+  border: 1px solid black;
   display: flex;
   flex-basis: 30%;
   flex-flow: column wrap;
+  padding: 5px;
 }
 
 .cart .cart__title {
   flex-basis: 1;
   font-size: 16pt;
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.total-price {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.finish-cart {
+  margin-top: 10px;
+  background-color: green;
+}
+
+.finish-msg {
+  background-color: #FEBD69;
+  border-radius: 5px;
+  display: none;
+  margin-top: 10px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.button {
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 7px;
+  transition: 500ms;
+}
+
+.button:hover {
+  cursor:pointer;
+  opacity: 0.8;
+}
+
+header {
+  background-color: #232F3E;
+  color: #FEBD69;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.logo {
+  padding-left: 30px;
+  transition: 500ms;
+}
+
+.logo:hover {
+  cursor:pointer;
+  opacity: 0.8;
+}
+
+.left-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 30px;
+  width: 20%;
+}
+
+.left-header li {
+  font-size: 20px;
+  list-style: none;
+  transition: 500ms;
+}
+
+.left-header li:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
