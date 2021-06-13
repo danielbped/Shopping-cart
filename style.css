@@ -73,6 +73,13 @@
   width: 100%;
 }
 
+.item .item__price {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 .item .item__add {
   background-color: #FEBD69;
   border: 0;
