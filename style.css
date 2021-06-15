@@ -114,6 +114,15 @@
   margin-bottom: 10px;
 }
 
+.cart__item {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.cart__img {
+  width: 50px;
+}
+
 .total-price {
   font-weight: bold;
   margin-top: 20px;

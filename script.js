@@ -107,11 +107,15 @@ const cartItemClickListener = (event, salePrice) => {
   cart.removeChild(event.target);
 };
 
-const createCartItemElement = ({ id: sku, title: name, price: salePrice }) => {
+const createCartItemElement = ({ title: name, price: salePrice, thumbnail: image }) => {
   const cart = document.getElementById('cart__items');
+  const img = document.createElement('img');
+  img.src = image;
+  img.className = 'cart__img';
   const li = document.createElement('li');
   li.className = 'cart__item';
   li.innerText = `${name} | Valor: $${salePrice}`;
+  li.appendChild(img);
   cart.appendChild(li);
   sumTotalPrice(salePrice);
   li.addEventListener('click', (event) =>
