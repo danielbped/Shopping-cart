@@ -1,4 +1,4 @@
-# Projeto Shopping Cart
+# Projeto [Shopping Cart](https://github.com/tryber/sd-012-project-shopping-cart/pull/91)
   - Módulo 1: Fundamentos do Desenvolvimento Web
     - Bloco 9: JavaScript Assíncrono e Promises
 
