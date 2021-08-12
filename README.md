@@ -2,7 +2,7 @@
   - Módulo 1: Fundamentos do Desenvolvimento Web
     - Bloco 9: JavaScript Assíncrono e Promises
 
-# Requisitos
+### Requisitos
 - [x] Crie uma listagem de produtos
 - [x] Adicione o produto ao carrinho de compras
 - [x] Remova o item do carrinho de compras ao clicar nele
